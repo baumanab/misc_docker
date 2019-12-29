@@ -20,8 +20,8 @@ FROM MFlow as Loaded
 
 RUN git clone https://github.com/mlflow/mlflow.git
 COPY quickstart.py .
-COPY run_server.sh
-RUN chmod a+ x run_server.sh
+COPY run_server.sh .
+RUN chmod a+x run_server.sh
 
 
 
